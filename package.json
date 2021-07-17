@@ -1,6 +1,8 @@
 {
-  "name": "root",
+  "name": "markdown-hub",
   "private": true,
+  "main": "main.js",
+  "version": "0.0.1",
   "devDependencies": {
     "@babel/core": "^7.8.3",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
@@ -23,6 +25,9 @@
     "copy-webpack-plugin": "^8.1.1",
     "css-loader": "^5.1.3",
     "css-minimizer-webpack-plugin": "^1.3.0",
+    "electron": "^13.1.7",
+    "electron-builder": "^22.11.7",
+    "electron-debug": "^3.2.0",
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-config-tui": "^4.0.0",
@@ -69,11 +74,16 @@
     "serve:ie": "node ./scripts/pkg-script.js --script serve:ie --type $type",
     "build": "node ./scripts/pkg-script.js --script build --type $type",
     "doc:dev": "node ./scripts/pkg-script.js --script doc:dev --type editor",
-    "doc": "node ./scripts/pkg-script.js --script doc --type editor"
+    "doc": "node ./scripts/pkg-script.js --script doc --type editor",
+    "electron-start": "electron .",
+    "dist-mac": "electron-builder --mac"
   },
   "workspaces": [
     "apps/*",
     "libs/*",
     "plugins/*"
-  ]
+  ],
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^19.0.1"
+  }
 }

@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-var */
 var content = [
+  '极限火花',
   '![image](https://uicdn.toast.com/toastui/img/tui-editor-bi.png)',
   '',
   '# Awesome Editor!',

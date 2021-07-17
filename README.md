@@ -131,6 +131,12 @@ Fork `main` branch into your personal repository. Clone it to local computer. In
 ```sh
 $ git clone https://github.com/{your-personal-repo}/tui.editor.git
 $ npm install
+$ cd libs/toastmark
+$ npm install @rollup/plugin-commonjs
+$ npm install @rollup/plugin-node-resolve
+$ npm install @rollup/plugin-json
+$ cd ../../
+$ npm run build toastmark
 $ npm run test editor
 ```
 
@@ -158,6 +164,18 @@ $ npm run serve:ie editor
 
 ``` sh
 $ npm test editor
+```
+
+#### electron start
+
+```sh
+$ npm run electron-start
+```
+
+#### electron build for mac
+
+```sh
+npm run dist-mac  
 ```
 
 ### Pull Request
